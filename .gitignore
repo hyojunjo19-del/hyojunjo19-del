@@ -1,0 +1,15 @@
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+tokens.json
+
+# Local scripts & scratch
+test_tokens.mjs
+scratch/
+
+# Browser Profile Data
+chrome_profile/
+
+# Node
+node_modules/
