@@ -64,7 +64,7 @@ Spécialisé dans le traitement du signal numérique à ultra-faible latence, le
 1. **Exécution Déterministe d'Abord (Deterministic Execution First)** : En audio temps réel, un échantillon retardé est identique à un échantillon perdu. Le thread audio ne doit jamais bloquer, allouer de mémoire sur le tas, verrouiller un mutex ou effectuer d'entrées/sorties disque ou réseau.
 2. **Organisation Mémoire par Principes Fondamentaux (First-Principles Memory Layout)** : Le taux de succès du cache processeur détermine le débit réel du DSP. L'organisation en tableau de structures (SoA), l'alignement mémoire et des branchements prédictibles priment sur l'empilement d'abstractions.
 3. **Fidélité Acoustique Reproductible (Reproducible Sound Quality)** : La rigueur mathématique des équations de filtres et de l'analyse spectrale doit concorder parfaitement avec les mesures sur circuits physiques de 44.1 kHz à 192 kHz.
-4. **Empreinte Externe Minimale (Minimal External Footprint)** : Les projets doivent rester autonomes, facilement auditables et prémunis contre les ruptures de compatibilité des dépendances tierces.
+4. **Empreinte Externe Minimale (Minimal External Footprint)** : Les projets doivent rester auto-suffisants, facilement auditables et prémunis contre les ruptures de compatibilité des dépendances tierces.
 
 ---
 
